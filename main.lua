@@ -73,6 +73,7 @@ function love.keypressed(key)
         text = ""
         if fase == 4 then
             printFolios(data[1], data[2], data[3])
+            love.system.openURL("file://"..love.filesystem.getSaveDirectory())
         end
     end
 end
